@@ -12,7 +12,7 @@
                     @endif
                     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <h1>{{ trans('panel.site_title') }}</h1>
+                        <h1>{{ trans('Creative Lok') }}</h1>
                         <p class="text-muted">{{ trans('global.login') }}</p>
 
                         <div class="input-group mb-3">
@@ -60,6 +60,9 @@
                                 <a class="btn btn-link px-0" href="{{ route('password.request') }}">
                                     {{ trans('global.forgot_password') }}
                                 </a>
+                                <a href="{{ route('register') }}">
+                                      {{ trans('global.register') }}
+                                 </a>
 
                             </div>
                         </div>

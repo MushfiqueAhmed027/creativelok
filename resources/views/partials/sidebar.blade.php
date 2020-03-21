@@ -1,9 +1,9 @@
 <div class="col-lg-4 sidebar">
     <div class="single-slidebar">
-        <h4>Jobs by Location</h4>
+        <h4>Creative Lok</h4>
         <ul class="cat-list">
-            @foreach($sidebarLocations as $location)
-                <li><a class="justify-content-between d-flex" href="{{ route('locations.show', $location->id) }}"><p>{{ $location->name }}</p><span>{{ $location->jobs_count }}</span></a></li>
+            @foreach($sidebarCategories as $template)
+                <li><a class="justify-content-between d-flex" href="{{ route('templates.show', $template->id) }}"><p>{{ $template->name }}</p><span>{{ $template->jobs_count }}</span></a></li>
             @endforeach
         </ul>
     </div>

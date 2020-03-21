@@ -1,7 +1,9 @@
 <?php
 
+Route::redirect('/', '/login');
 Route::redirect('/home', '/admin');
-Auth::routes(['register' => false]);
+//Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('search', 'HomeController@search')->name('search');
